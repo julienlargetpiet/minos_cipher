@@ -18,4 +18,10 @@ For the cipherer:
 - finding the number of **iterations** to have if we want to have a deque that matches the one created before according to the **all_comb** algorithm
 - that's it !
 
+For the decipherer
+
+- accessing the number of iterations, which should be the **encrypted file**, and the private **n** and **k** number
+- generating the boolean deque according to the inputs
+- converting final binary to string
+
 
