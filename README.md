@@ -6,7 +6,7 @@ layer2.h --&gt; layer1.h --&gt; layer0.h --&gt; iostream, vector, deque
 
 ## What is this ?
 
-It is a cipher method using combinatons, yes the same one from the 
+It is a cipher method using combinatons, yes the same one from 
 
                         n! / ((n-k)! * k!)
                         
@@ -43,6 +43,8 @@ for (char val : input_snt) {
 };
 
 std::cout << out_snt << "\n";
+
+"This a sentence! Really cool :) ."
 ```
 
 
