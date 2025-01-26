@@ -11,10 +11,10 @@ int main() {
 
   for (char val : input_snt) {
     vec = cipherer_minos1b(val);
-    k = vec[0];
-    n = vec[1];
-    ciphered_val = vec[2];
-    out_snt.push_back(decipherer_minos1b(k, n, ciphered_val));
+    x1 = vec[0];
+    public_info = vec[1];
+    x2 = vec[2];
+    out_snt.push_back(decipherer_minos1b(x1, public_info, x2));
   };
 
   std::cout << out_snt << "\n";
