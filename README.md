@@ -26,7 +26,7 @@ For the decipherer
 
 ## Example
 
-### Ciphering letter per letter
+### Ciphering letter per letter (7 bits)
 
 Fast but not secure. Indeed, each ciphered letter has 1 / 128 chances to be discovered.
 
@@ -58,7 +58,7 @@ Output:
 
 `"This a sentence! Really cool :) ."`
 
-## 2 Letters by 2 Letters
+## 2 Letters by 2 Letters (14 bits)
 
 A bit slower (2 milliseconds for the example), but the 2 letters have 1 / 16384 chances to be discovered.
 
@@ -98,7 +98,7 @@ Output:
 
 "ThisIsHelloWorld"
 
-## n Letters by n Letters
+## n Letters by n Letters (7 * n bits)
 
 When n takes higher value, the security will greatly increase but the execution time wil also greatly increase.
 
