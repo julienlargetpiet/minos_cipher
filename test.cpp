@@ -25,7 +25,7 @@ int main() {
 
   std::cout << out_snt << "\n";
   
-  // 3 Letters by 3 Letters //
+  // 2 Letters by 2 Letters //
 
   unsigned int step = 2;
 

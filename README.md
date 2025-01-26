@@ -28,6 +28,8 @@ For the decipherer
 
 ### Ciphering letter per letter
 
+Fast but not secure. Indeed, each ciphered letter has 1 / 128 chances to be discovered.
+
 ```
 std::string input_snt = "This a sentence! Really cool :) .";
 std::vector<unsigned int> vec;
@@ -51,6 +53,42 @@ std::cout << out_snt << "\n";
 Output:
 
 `"This a sentence! Really cool :) ."`
+
+## 2 Letters by 2 Letters
+
+A bit slower (2 milliseconds for the example), but each letter has 1 / 9908 chances to be discovered.
+
+```
+unsigned int step = 2;
+
+input_snt = "ThisIsHelloWorld";
+
+std::string rtn_str = "";
+std::string cur_str;
+
+const unsigned int nref = input_snt.length();
+unsigned int i = 0;
+unsigned int i2;
+while (i < nref) {
+  cur_str = "";
+  i2 = 0;
+  while (i2 < step & i + i2 < nref) {
+    cur_str.push_back(input_snt[i + i2]);
+    i2 += 1;
+  };
+  vec = cipherer_minos(cur_str);
+  x1 = vec[0];
+  public_info = vec[1];
+  x2 = vec[2];
+  rtn_str += decipherer_minos(x1, public_info, x2);
+  i += step;
+};
+std::cout << rtn_str << "\n";
+```
+
+Output:
+
+"ThisIsHelloWorld"
 
 ## Why ?
 
