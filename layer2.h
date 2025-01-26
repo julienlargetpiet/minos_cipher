@@ -40,6 +40,9 @@ std::vector<unsigned int> cipherer_minos(std::string &x) {
   for (unsigned int i = 0; i < n; ++i) {
     cur_val = int(x[i]);
     cur_dq = int_to_binarydq(cur_val);
+    if (cur_dq.size() < 7) {
+      cur_dq.push_front(0);
+    };
     cur_k = 0;
     for (i2 = 0; i2 < 7; ++i2) {
       if (cur_dq[i2] != 0) {
@@ -67,8 +70,12 @@ std::string decipherer_minos(unsigned int &k, unsigned int &n, unsigned int &x) 
         cur_dq[i2] = 1;
       };
     };
+    if (cur_dq[0] == 0) {
+      cur_dq.pop_front();
+    };
     cur_val = binarydq_to_int(cur_dq);
     rtn_str.push_back(char(cur_val));
   };
   return rtn_str;
 };
+

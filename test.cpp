@@ -27,9 +27,9 @@ int main() {
   
   // 2 Letters by 2 Letters //
 
-  unsigned int step = 2;
+  unsigned int step = 3;
 
-  input_snt = "ThisIsHelloWorld";
+  //input_snt = "ThisIsHelloWorldddjfjddjfjdlfdhfdfdfhkdjhfdkjfhdjf!";
 
   std::string rtn_str = "";
   std::string cur_str;
@@ -52,6 +52,13 @@ int main() {
     i += step;
   };
   std::cout << rtn_str << "\n";
+
+  //std::deque<bool> teste_dq = int_to_binarydq(int('@'));
+  //for (bool vl : teste_dq) {
+  //  std::cout << vl;
+  //};
+  //std::cout << "\n";
+
   return 0;
 };
 
