@@ -1,6 +1,6 @@
 #include "layer1.h"
 
-std::vector<unsigned int> cipherer_minos(char &x) {
+std::vector<unsigned int> cipherer_minos1b(char &x) {
   std::vector<unsigned int> rtn_v = {0, 0, 0};
   unsigned int cur_val = int(x);
   std::deque<bool> cur_dq = int_to_binarydq(cur_val);
@@ -17,7 +17,7 @@ std::vector<unsigned int> cipherer_minos(char &x) {
   return rtn_v;
 };
 
-char decipherer_minos(unsigned int &k, unsigned int &n, unsigned int &x) {
+char decipherer_minos1b(unsigned int &k, unsigned int &n, unsigned int &x) {
   std::vector<bool> ref_v = bool_gen(k, n, x);
   std::deque<bool> cur_dq;
   unsigned int cur_val;
