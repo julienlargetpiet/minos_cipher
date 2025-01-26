@@ -26,8 +26,6 @@ For the decipherer
 
 ## Example
 
-Encrypting 'word'
-
 ```
 std::string input_snt = "This a sentence! Really cool :) .";
 std::vector<unsigned int> vec;
