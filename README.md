@@ -44,8 +44,12 @@ for (char val : input_snt) {
 
 std::cout << out_snt << "\n";
 
-"This a sentence! Really cool :) ."
 ```
+
+Output:
+
+`"This a sentence! Really cool :) ."`
+ `
 
 
 
