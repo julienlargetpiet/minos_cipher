@@ -49,7 +49,6 @@ std::cout << out_snt << "\n";
 Output:
 
 `"This a sentence! Really cool :) ."`
- `
 
 
 
