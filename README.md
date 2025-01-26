@@ -90,6 +90,10 @@ Output:
 
 "ThisIsHelloWorld"
 
+## n Letters by n Letters
+
+When n takes higher value, the security will greatly increase but the execution time wil also greatly increase.
+
 ## Why ?
 
 Just as a Proof Of Concept
