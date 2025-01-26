@@ -29,13 +29,22 @@ For the decipherer
 Encrypting 'word'
 
 ```
-std::string input_wrd = "word";
-std::vector<unsigned int> vec = cipherer_minos(input_wrd);
-unsigned int k = vec[0];
-unsigned int n = vec[1];
-unsigned int ciphered_wrd = vec[2];
-std::string out_wrd = decipherer_minos(k, n, ciphered_wrd);
-"word"
+std::string input_snt = "This a sentence! Really cool :) .";
+std::vector<unsigned int> vec;
+unsigned int k;
+unsigned int n;
+unsigned int ciphered_val;
+std::string out_snt;
+
+for (char val : input_snt) {
+  vec = cipherer_minos(val);
+  k = vec[0];
+  n = vec[1];
+  ciphered_val = vec[2];
+  out_snt.push_back(decipherer_minos(k, n, ciphered_val));
+};
+
+std::cout << out_snt << "\n";
 ```
 
 
