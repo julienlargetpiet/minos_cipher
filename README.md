@@ -60,7 +60,7 @@ Output:
 
 ## 2 Letters by 2 Letters
 
-A bit slower (2 milliseconds for the example), but the 2 letters have 1 / 19816 chances to be discovered.
+A bit slower (2 milliseconds for the example), but the 2 letters have 1 / 16384 chances to be discovered.
 
 Indeed, the number of total combinations is:
 
