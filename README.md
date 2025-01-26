@@ -32,7 +32,7 @@ Fast but not secure. Indeed, each ciphered letter has 1 / 128 chances to be disc
 
 Indeed, the number of total combinations is:
 
-$\Sigma_{k=0}^{7} \frac{7!}{(7 - k)! \cdot k! } $ 
+$\Sigma_{k=0}^{7} \frac{7!}{(7 - k)! \cdot k! }$ 
 
 ```
 std::string input_snt = "This a sentence! Really cool :) .";
@@ -61,6 +61,10 @@ Output:
 ## 2 Letters by 2 Letters
 
 A bit slower (2 milliseconds for the example), but the 2 letters have 1 / 19816 chances to be discovered.
+
+Indeed, the number of total combinations is:
+
+$\Sigma_{k=0}^{14} \frac{14!}{(14 - k)! \cdot k! }$ 
 
 ```
 unsigned int step = 2;
@@ -97,6 +101,10 @@ Output:
 ## n Letters by n Letters
 
 When n takes higher value, the security will greatly increase but the execution time wil also greatly increase.
+
+The number of total combinations is:
+
+$\Sigma_{k=0}^{n} \frac{n!}{(n - k)! \cdot k! }$ 
 
 ## Why ?
 
