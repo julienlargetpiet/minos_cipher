@@ -54,6 +54,8 @@ Output:
 
 Just as a Proof Of Concept
 
+This algorithm as 0 collision, but is not very secure for small data encryption and is not really fast for encrypting large data.
+
 
 
 
