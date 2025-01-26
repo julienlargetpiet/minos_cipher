@@ -32,7 +32,7 @@ Fast but not secure. Indeed, each ciphered letter has 1 / 128 chances to be disc
 
 Indeed, the number of total combinations is:
 
-$\sigma_{k=0}^{7} \frac{7!}{(7 - k)! \dot k! } $ 
+$\Sigma_{k=0}^{7} \frac{7!}{(7 - k)! \dot k! } $ 
 
 ```
 std::string input_snt = "This a sentence! Really cool :) .";
