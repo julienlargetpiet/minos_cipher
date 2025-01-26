@@ -6,7 +6,7 @@ layer2.h --&gt; layer1.h --&gt; layer0.h --&gt; iostream, vector, deque
 
 ## What is this ?
 
-It is a cipher method using combinatons, yes the same one from 
+It is a cipher method using combinations, yes the same one from 
 
                         n! / ((n-k)! * k!)
                         
