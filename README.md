@@ -22,7 +22,7 @@ For the cipherer:
 
 For the decipherer
 
-- accessing the number of iterations, which should be the **encrypted file**, and the private **n** and **k** number
+- accessing the number of iterations, the private **n** (which should be the encrypted file) and the **k** number
 - generating the boolean deque according to the inputs
 - converting final binary to string
 
